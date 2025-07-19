@@ -2,7 +2,7 @@ function getSource() {
   return {
     id: "readcomiconline",
     name: "ReadComicOnline",
-    baseUrl: "https://urldefense.com/v3/__https://readcomiconline.li__;!!BWcElQ!xPBliZgT1GepAKqTf-0PJmRE9ZM657fH27-XZ5InTPBrDOp-vh0xC5I3qlZaE_fqZG0c-ll99K0CgKZezA5qnhfC$",
+    baseUrl: "https://readcomiconline.li",
     
     popularManga: async function (page) {
       const res = await fetch(`${this.baseUrl}/ComicList?Page=${page}`);
@@ -14,7 +14,7 @@ function getSource() {
       return items.map(item => ({
         title: item.textContent.trim(),
         url: item.getAttribute("href"),
-        thumbnail_url: "https://urldefense.com/v3/__https://via.placeholder.com/150__;!!BWcElQ!xPBliZgT1GepAKqTf-0PJmRE9ZM657fH27-XZ5InTPBrDOp-vh0xC5I3qlZaE_fqZG0c-ll99K0CgKZezMWY7-Wr$", // Optional: if there's a real thumbnail
+        thumbnail_url: "https://via.placeholder.com/150__;!!BWcElQ!xPBliZgT1GepAKqTf-0PJmRE9ZM657fH27-XZ5InTPBrDOp-vh0xC5I3qlZaE_fqZG0c-ll99K0CgKZezMWY7-Wr$", // Optional: if there's a real thumbnail
       }));
     },
     
