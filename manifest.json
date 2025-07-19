@@ -1,0 +1,11 @@
+{
+"id": "readcomiconline"' 
+"name": "Read Comic Online"' 
+"version":1, 
+"language": "en" 
+"type": "manga" , 
+"adult": false, 
+"nsfw": false, 
+"developer": "Furoshii", 
+"source": "./source.js"  
+} 
